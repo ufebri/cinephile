@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lagingoding.cinephile">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission
+        android:name="com.lagingoding.cinephile.READ_DATABASE"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="com.lagingoding.cinephile.WRITE_DATABASE"
+        android:protectionLevel="normal" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/CinephileTheme">
+
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_settings" />
+
+        <activity
+            android:name=".ui.search.SearchActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.detail.DetailActivity"
+            android:exported="true" />
+
+        <provider
+            android:name=".ui.main.favorite.FavoriteProvider"
+            android:authorities="com.lagingoding.cinephile"
+            android:exported="true"
+            android:readPermission="com.lagingoding.cinephile.READ_DATABASE"
+            android:writePermission="com.lagingoding.cinephile.WRITE_DATABASE" />
+
+        <receiver
+            android:name=".util.alarm.AlarmBroadcast"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".widget.FavoriteWidget"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/favorite_widget_info" />
+        </receiver>
+
+        <service
+            android:name=".widget.FavoriteWidgetService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+    </application>
+
+</manifest>

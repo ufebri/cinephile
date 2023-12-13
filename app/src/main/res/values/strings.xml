@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name" translatable="false">Cinephile</string>
+    <string name="title_activity_main" translatable="false">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Movies</string>
+    <string name="title_notifications">TV</string>
+    <string name="menu_language">language</string>
+    <string name="add_to_watch_list">Add To Watch List</string>
+    <string name="favorite">Favorite</string>
+    <string name="added_favorite">Added To Watchlist</string>
+    <string name="removeToWatchList">Remove To Watch List</string>
+    <string name="tv_header_discovery">Discovery</string>
+    <string name="search">search</string>
+    <string name="appwidget_text" translatable="false">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="no_data_favorite">You don\'t have any favorite item</string>
+    <string name="title_activity_settings" translatable="false">Settings</string>
+
+    <!-- Sync Preferences -->
+    <string name="reminder_daily_key" translatable="false">reminder_daily_key</string>
+    <string name="remider_upcoming_key" translatable="false">reminder_upcoming_key</string>
+    <string name="daily_movie_message">Recommendation Movies</string>
+    <string name="reminder_title">Reminder</string>
+    <string name="daily_reminder_title">Daily Reminder Recommendation Movie</string>
+    <string name="summary_reminder">Turn on/off reminder</string>
+    <string name="upcoming_reminder_title">Upcoming Movie</string>
+    <string name="change_language">Change Language</string>
+    <string name="intent_to_language" translatable="false">intent_to_language</string>
+</resources>

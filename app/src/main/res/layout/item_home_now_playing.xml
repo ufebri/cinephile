@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimens_very_small"
+    app:cardCornerRadius="@dimen/dimens_small">
+
+    <ImageView
+        android:id="@+id/iv_item_nowPlaying"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:alpha="0.8"
+        android:scaleType="centerCrop"
+        tools:ignore="ContentDescription"
+        tools:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_titleNowPlaying"
+        style="@style/TextAppearance.AppCompat.Title.Inverse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/dimens_medium"
+        android:layout_marginBottom="@dimen/dimens_medium"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="Judul Film" />
+
+
+</androidx.cardview.widget.CardView>

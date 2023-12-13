@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimens_very_small"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_item_posterFilm"
+            android:layout_width="@dimen/dimens_width_poster"
+            android:layout_height="@dimen/dimens_height_poster"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/tv_item_titleFilm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens_small"
+            android:layout_marginEnd="@dimen/dimens_very_small"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textSize="@dimen/text_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/tv_item_overviewFilm"
+            app:layout_constraintStart_toEndOf="@id/iv_item_posterFilm"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@tools:sample/lorem" />
+
+        <TextView
+            android:id="@+id/tv_item_overviewFilm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens_small"
+            android:layout_marginTop="@dimen/dimens_very_small"
+            android:layout_marginEnd="@dimen/dimens_very_small"
+            android:ellipsize="end"
+            android:maxLines="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_item_posterFilm"
+            app:layout_constraintTop_toBottomOf="@id/tv_item_titleFilm"
+            tools:text="@tools:sample/lorem/random" />
+
+        <TextView
+            android:id="@+id/tv_item_ratingFilm"
+            android:layout_width="0dp"
+            android:textSize="@dimen/text_medium"
+            android:drawableStart="@drawable/ic_rating"
+            android:drawablePadding="@dimen/dimens_very_small"
+            android:layout_marginStart="@dimen/dimens_small"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_item_posterFilm"
+            app:layout_constraintTop_toBottomOf="@id/tv_item_overviewFilm"
+            tools:text="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

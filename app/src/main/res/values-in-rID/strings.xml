@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_dashboard">Film</string>
+    <string name="title_notifications">TV</string>
+    <string name="title_home">Beranda</string>
+    <string name="menu_language">bahasa</string>
+    <string name="add_to_watch_list">Tonton Nanti</string>
+    <string name="add_widget">Tambahkan Widget</string>
+    <string name="added_favorite">Tonton Nanti</string>
+    <string name="change_language">Ganti Bahasa</string>
+    <string name="daily_movie_message">Rekomandasi Film</string>
+    <string name="daily_reminder_title">Notifikasi Harian Rekomendasi Film</string>
+    <string name="favorite">Favorit</string>
+    <string name="no_data_favorite">Kamu Tidak Memiliki Film Favorit</string>
+    <string name="reminder_title">Notifikasi</string>
+    <string name="removeToWatchList">Hapus</string>
+    <string name="search">cari</string>
+    <string name="summary_reminder">Aktif/nonaktifkan Notifikasi</string>
+    <string name="tv_header_discovery">Discover</string>
+    <string name="upcoming_reminder_title">Film yang akan datang</string>
+</resources>
